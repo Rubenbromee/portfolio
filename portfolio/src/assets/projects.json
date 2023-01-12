@@ -46,7 +46,7 @@
 			"name": "Spotify recommendation system",
 			"description": "In this project we created a recommendation system using Spotipy. The system recommends songs that are audially similar to chosen input songs. This gave me insights into dataprocessing with the Pandas package for python and how the Spotipy API works. Some performance improvements could have been made and a better dataset could have been chosen.",
 			"link": "https://github.com/Rubenbromee/Recommender-system",
-			"image": "https://i.imgur.com/iJ3EPYn.png"
+			"image": "https://i.imgur.com/76U6YvU.png"
 		},
 		{
 			"name": "Implementation of PageRank alogrithm",
@@ -59,6 +59,12 @@
 			"description": "In this project me and my group made an idle game in a 3D enviroment. It was a really fun experience. I did the modelling of the buildings and got some experience with Blender.",
 			"link": "https://robotgandhi.itch.io/lobbyist-clicker-3d",
 			"image": "https://i.imgur.com/Rc7qaTe.png"
+		},
+		{
+			"name": "Virtual Trainer",
+			"description": "In this project we made an application that lets you do exercises and tracks your repetitions through the phones gyroscope. The application aimed to gameify exercise. I learned to apply agile development techniques such as SCRUM and got experience with Unity during the development process.",
+			"link": "https://github.com/Linnet5/Kandidatprojekt",
+			"image": "https://i.imgur.com/uZgiDHp.jpg"
 		}
 	]
 }
