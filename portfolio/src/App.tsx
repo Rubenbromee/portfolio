@@ -12,14 +12,26 @@ const App: React.FC = () => {
 					w={"300px"}
 					h={"300px"}
 					borderRadius={"10px"}
-					backgroundColor={"red"}
+					backgroundColor={"white"}
 					alignItems={"center"}
 					flexDirection={"column"}
+					border={"1px solid #D3D3D3"}
+					boxShadow={"5px 5px 3px 0px rgba(212,212,212,0.75)"}
+					padding={"10px"}
 				>
-					<Text size={"lg"} marginY={"10px"}>
-						{project.name}
-					</Text>
-					<Flex w={"225px"} h={"225px"} justifyContent={"center"}>
+					<Flex maxW={"225px"} textAlign={"center"}>
+						<Text size={"lg"} marginY={"10px"}>
+							{project.name}
+						</Text>
+					</Flex>
+					<Flex
+						maxW={"200px"}
+						maxH={"200px"}
+						w={"100%"}
+						h={"100%"}
+						justifyContent={"center"}
+						alignItems={"center"}
+					>
 						<Image src={project.image} />
 					</Flex>
 				</Flex>
@@ -46,7 +58,9 @@ const App: React.FC = () => {
 			</Flex>
 			<Button>CV</Button>
 			<Text>Projects</Text>
-			<SimpleGrid>{renderProjects()}</SimpleGrid>
+			<SimpleGrid columns={3} gap={"20px"}>
+				{renderProjects()}
+			</SimpleGrid>
 		</Flex>
 	);
 };

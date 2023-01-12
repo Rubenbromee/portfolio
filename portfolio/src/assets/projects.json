@@ -5,6 +5,60 @@
 			"description": "In this project I helped create the student portal for The student section for Industrial Engineering and Management. It was a very nice learning experience to create a full stack web application from the ground up. It has been a pleasure to work with talented developers and project managers in the creation of this project. I have learned more about React, TypeScript, Chakra UI and Recoil. Working with Strapi has also been an interesting and learning experience!",
 			"link": "https://i-sektionen.web.app/",
 			"image": "https://i.imgur.com/EsB1Itt.png"
+		},
+		{
+			"name": "Barker",
+			"description": "Barker is meant to be a social media where a user can exclusively post sounds! In this project I got the experience of creating a full stack web application! I learned a lot about software project structure, React, React Query, Node.js, MongoDB, Chakra UI and GCP.",
+			"link": "https://github.com/davidstyrbjorn/barker",
+			"image": "https://i.imgur.com/U7LTDr6.png"
+		},
+		{
+			"name": "DCGAN",
+			"description": "In this project I implemented a deep convolutional generative adversarial network and compared the quality of its output when training epochs, dataset and loss functions were varied. It was very interesting to learn more about neural networks and exciting to create my own which also generated a very tangible output in the form of images! This project was done as a part of the course TNM095 Artificial Intelligence for Interactive Media.",
+			"link": "https://github.com/Rubenbromee/dcgan-tnm095",
+			"image": "https://i.imgur.com/FyyPyAJ.png"
+		},
+		{
+			"name": "Procedural sound visualization",
+			"description": "A procedural sound visualizer that affects the visualization based on the frequency and amplitude data of the sound. In this project I learned about using librosa and PyOpenGL. The project was done for the course TNM084 Procedural Methods for Images.",
+			"link": "https://github.com/Rubenbromee/TNM084-Project",
+			"image": "https://i.imgur.com/CQijHXV.png"
+		},
+		{
+			"name": "Visualization of a sports logging dataset",
+			"description": "In this project a sports logging dataset was visualized. Only a subset of the dataset was visualized. During the project I learned more about TypeScript, HTML, CSS, D3.js, React and Recoil.",
+			"link": "https://training-data-visualization.ew.r.appspot.com/",
+			"image": "https://i.imgur.com/6zAHLEK.png"
+		},
+		{
+			"name": "Modelling and visualization of sound propagation",
+			"description": "In this project we modelled sound propagation in a room using the acoustic wave equation. The propagation was then visualized. This was done using MATLAB. This project gave me knowledge in modelling physical phenomena mathematically and some insight in video objects in MATLAB together with some general practice of MATLAB.",
+			"link": "https://github.com/Rubenbromee/MoS",
+			"image": "https://i.imgur.com/qCImzpm.png"
+		},
+		{
+			"name": "Down to the Wire",
+			"description": "This exciting puzzle game was made together with a talented team over a weekend for the game jam Ludum Dare 50. The game came in 70th overall out of over 2000 games. The game was built in Unity.",
+			"link": "https://davidstyrbjorn.itch.io/down-to-the-wire",
+			"image": "https://i.imgur.com/RGCa7wg.png"
+		},
+		{
+			"name": "Spotify recommendation system",
+			"description": "In this project we created a recommendation system using Spotipy. The system recommends songs that are audially similar to chosen input songs. This gave me insights into dataprocessing with the Pandas package for python and how the Spotipy API works. Some performance improvements could have been made and a better dataset could have been chosen.",
+			"link": "https://github.com/Rubenbromee/Recommender-system",
+			"image": "https://i.imgur.com/iJ3EPYn.png"
+		},
+		{
+			"name": "Implementation of PageRank alogrithm",
+			"description": "In this project we implemented the PageRank algorithm, applied it to some test data and visualized the results. It was really interesting to learn how this algorithm works and what uses it can have. I learned to make computations with sparse matrices and the mathematics behind the algorithm. It would be interesting to test the algorithm on a more recent dataset.",
+			"link": "https://github.com/Rubenbromee/Pagerank",
+			"image": "https://i.imgur.com/xQOpYeD.jpg"
+		},
+		{
+			"name": "Lobbyist Clicker 3D",
+			"description": "In this project me and my group made an idle game in a 3D enviroment. It was a really fun experience. I did the modelling of the buildings and got some experience with Blender.",
+			"link": "https://robotgandhi.itch.io/lobbyist-clicker-3d",
+			"image": "https://i.imgur.com/Rc7qaTe.png"
 		}
 	]
 }
