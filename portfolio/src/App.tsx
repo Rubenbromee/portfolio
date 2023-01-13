@@ -1,18 +1,29 @@
 import { Button } from "@chakra-ui/button";
-import { Text, Flex, Link, SimpleGrid, Image, Heading } from "@chakra-ui/react";
+import {
+	Text,
+	Flex,
+	Link,
+	SimpleGrid,
+	Image,
+	Heading,
+	useMediaQuery,
+} from "@chakra-ui/react";
 import React, { useState } from "react";
 import projects from "./assets/projects.json";
 import ProjectModal, { Project } from "./ProjectModal";
+import CV from "./assets/CV.pdf";
+import { saveAs } from "file-saver";
 
 const App: React.FC = () => {
 	const [openedProject, setOpenedProject] = useState<Project>();
 	const onClose = () => {
 		setOpenedProject(undefined);
 	};
+	const [mobile] = useMediaQuery("(max-width: 800px)");
 
 	const renderProjects = () => {
 		let renders: JSX.Element[] = [];
-		projects.data.map((project) => {
+		projects.data.map((project, idx) => {
 			renders.push(
 				<Flex
 					w={"300px"}
@@ -26,6 +37,7 @@ const App: React.FC = () => {
 					padding={"10px"}
 					onClick={() => setOpenedProject(project)}
 					cursor={"pointer"}
+					key={idx}
 				>
 					<Flex maxW={"225px"} textAlign={"center"}>
 						<Text fontSize={"lg"} marginY={"10px"}>
@@ -54,10 +66,18 @@ const App: React.FC = () => {
 			alignItems={"center"}
 			flexDirection={"column"}
 		>
-			<Heading size={"2xl"} marginTop={"25px"}>
-				Portfolio page of Ruben Bromée
-			</Heading>
-			<Flex gap={"10px"} marginY={"25px"} alignItems={"center"}>
+			<Flex flexWrap={"wrap"} marginX={"auto"} textAlign={"center"}>
+				<Heading size={"2xl"} marginTop={"25px"}>
+					Portfolio page of Ruben Bromée
+				</Heading>
+			</Flex>
+
+			<Flex
+				gap={"10px"}
+				marginY={"25px"}
+				alignItems={"center"}
+				flexDirection={mobile ? "column" : "row"}
+			>
 				<Link href={"mailto:ruben.bromee@gmail.com"} fontSize={"lg"}>
 					ruben.bromee@gmail.com
 				</Link>
@@ -79,14 +99,26 @@ const App: React.FC = () => {
 				>
 					GitHub
 				</Link>
-				<Button colorScheme={"blue"}>Get CV</Button>
+				<Button
+					colorScheme={"blue"}
+					onClick={() => {
+						saveAs(CV, "Ruben Bromée CV");
+					}}
+				>
+					Get CV
+				</Button>
 			</Flex>
 			<Heading size={"lg"}>Projects</Heading>
 			<Flex marginY={"25px"}>
-				<SimpleGrid columns={3} gap={"20px"}>
+				<SimpleGrid
+					columns={mobile ? 1 : 3}
+					gap={"20px"}
+					marginX={"auto"}
+				>
 					{renderProjects()}
 				</SimpleGrid>
 			</Flex>
+
 			{openedProject != undefined && (
 				<ProjectModal
 					project={openedProject}

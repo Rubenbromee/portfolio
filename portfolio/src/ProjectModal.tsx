@@ -33,7 +33,7 @@ const ProjectModal: React.FC<Props> = ({ project, open, onClose }: Props) => {
 			{project && (
 				<Modal isOpen={open} onClose={onClose}>
 					<ModalOverlay />
-					<ModalContent padding={"25px"}>
+					<ModalContent padding={"25px"} w={"80%"}>
 						<ModalHeader>{project.name}</ModalHeader>
 						<ModalCloseButton />
 						<ModalBody>
